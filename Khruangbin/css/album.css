@@ -1,0 +1,60 @@
+
+/*FONT*/
+
+.title1 {
+  font-family: 'Baskerville_Regular';
+  font-size: 6.6875rem;
+  color: #33313a;
+
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+
+  letter-spacing: 15.625px;
+}
+
+/**********************/
+/*** CONTENU GLOBAL ***/
+/**********************/
+
+.album-left {
+  margin-left: 20rem;
+  text-align: right;
+}
+
+.album-left img {
+  width: 70%;
+}
+
+.text-track {
+  font-family: 'Tw Cen MT';
+  font-size: 1.426875rem;
+
+  font-style: italic;
+  text-transform: none;
+
+  margin-top: 2rem;
+}
+
+.text-track p {
+  line-height: 2.8rem;
+}
+
+.text-description {
+  font-family: 'Tw Cen MT';
+  font-size: 1.375rem;
+
+  text-align: justify;
+  text-transform: none;
+
+  margin-top: -2rem;
+  margin-left: 20.7rem;
+  margin-right: 3.3rem;
+  margin-bottom: 1.2rem;
+}
+
+/*
+.album-left {
+  text-align: end;
+}
+*/

@@ -1,0 +1,10 @@
+
+body {
+    background-image: url("../images/contact.jpg");
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding-top: 88vh;
+}

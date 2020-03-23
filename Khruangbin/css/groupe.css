@@ -1,0 +1,54 @@
+
+/*FONT*/
+
+.title-over {
+  height: 80vh;
+
+  position: relative;
+
+  margin-left: 14rem;
+  margin-right: 14rem;
+  padding-bottom: 3rem;
+}
+
+.title1 {
+  font-family: 'Baskerville_Regular';
+  font-size: 6.6875rem;
+  color: #33313a;
+
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  
+  letter-spacing: 15.625px;
+}
+
+.title-over img {
+  position: relative;
+  width: 60%;
+  bottom: 60px;
+}
+
+.text-groupe {
+  font-family: 'Tw Cen MT';
+  font-size: 1.625rem;
+
+  margin-top: -3rem;
+  margin-left: 15.2vw;
+  margin-right: 15.2vw;
+
+  text-align: center;
+  text-transform: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/**********************/
+/*** CONTENU GLOBAL ***/
+/**********************/
+
+.main-page {
+  padding-top: 4.6rem;
+}

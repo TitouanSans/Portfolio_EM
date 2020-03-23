@@ -1,0 +1,14 @@
+﻿{
+  "name": "firebase-playground",
+  "version": "1.0.0",
+  "description": "Gestion aministration site Khruangbin",
+  "main": "scripts/index.js",
+  "scripts": {
+    "start": "live-server --port=1337 --browser=chrome"
+  },
+  "author": "Titouan Sans <titouan.sanshochart@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

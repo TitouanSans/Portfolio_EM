@@ -1,0 +1,10 @@
+
+body {
+    background-image: url("../images/admin.jpg");
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding-top: 88vh;
+}
