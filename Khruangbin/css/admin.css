@@ -1,0 +1,70 @@
+
+
+/*************************/
+/*** BACKGROUND STYLES ***/
+/*************************/ 
+
+main {
+    padding-top: 15vh;
+    
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 1rem; /* 14.4px */
+    font-weight: bold;
+}
+
+.title1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.return {
+    margin: 2rem;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+/***************/
+/*** Boutons ***/
+/***************/
+
+.button-valide {
+    font-family: 'Tw Cen MT';
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: #33313a;
+    border: 1px solid #33313a;
+    border-radius: 10px;
+
+    padding: 1rem 2rem;
+
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.button-valide1 {
+    background-color: #33313a;
+    color: #fef0cd;
+    border: 1px solid #33313a;
+}
+
+.button-valide1:hover {
+    background-color: #fef0cd;
+    color: #33313a;
+
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+
+.admin-footer {
+    margin-top: 26rem;
+}

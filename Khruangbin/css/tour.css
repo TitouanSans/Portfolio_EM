@@ -1,0 +1,92 @@
+
+.title1 {
+  font-family: 'Baskerville_Regular';
+  font-size: 6.6875rem;
+  color: #33313a;
+
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+
+  letter-spacing: 15.625px;
+  margin-bottom: 5rem;
+  }
+
+.title-country {
+  font-family: 'Tw Cen MT';
+  font-size: 4.5rem;
+  width: 50vw;
+
+  position: relative;
+}
+
+.title-country a {
+  color: #33313a;
+  opacity: .5;
+
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.title-country a:hover {
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+  
+  color: #33313a;
+  opacity: 1;
+}
+
+.date-style {
+font-family: 'Tw Cen MT';
+color: #33313a;
+font-size: 1rem;
+font-weight: normal;
+
+line-height: 2rem;
+
+text-transform: none;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+/**********************/
+/*** CONTENU GLOBAL ***/
+/**********************/
+
+.country-left {
+  margin-left: 20vw;
+}
+
+.country-right {
+  margin-right: 20vw;
+}
+
+.left {
+  text-align: right;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 25rem;
+}
+
+.right {
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+  margin-right: 25rem;
+}
+
+.flex {
+  display: flex;
+  margin-top: 10vh;
+  /*
+  position: absolute;
+  bottom: 0;
+  */
+}
+
+.initial {
+  flex: initial;
+}

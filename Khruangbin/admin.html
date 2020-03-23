@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Khruangbin</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templates.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="accueil">
+
+        <svg height="100vh" width="100vw" class="absolute">
+                <line x1="0" y1="6%" x2="13%" y2="6%" style="stroke:rgb(0,0,0); stroke-width:1" />
+                <line x1="87%" y1="6%" x2="100%" y2="6%" style="stroke:rgb(0,0,0); stroke-width:1" />
+                
+                <line x1="90%" y1="24.4%" x2="93%" y2="24.4%" style="stroke:rgb(0,0,0); stroke-width:1" />
+        
+                <line x1="30%" y1="92.5%" x2="38%" y2="92.5%" style="stroke:rgb(0,0,0); stroke-width:1" />
+                <line x1="62%" y1="92.5%" x2="70%" y2="92.5%" style="stroke:rgb(0,0,0); stroke-width:1" />
+                Sorry, your browser does not support inline SVG.
+            </svg>
+    
+    <nav class="menu">
+
+            <div class="flex-container bloc">
+                    <div class="menu-left center-text auto bloc">
+                        <a href="index.html" class="bloc">Menu</a><br>
+                        <a href="groupe.html">Groupe</a><br>
+                        <a href="album.html">Album</a><br>
+                        <a href="tournee.html">Tour</a>
+                    </div>
+        
+                    <div class="menu-right center-text auto bloc">
+                        <a href="contact.html" class="bloc">Contact</a><br>
+                        <a href="admin.html" class="active">Admin</a>
+                    </div>
+                </div>
+        
+        </nav>
+        
+    <main class="container mt-3">
+    
+        <form class="col col-md-6" id="loginForm">
+            <h1 class="title1">Connexion administrateur</h1>
+            <div class="form-group">
+                <label for="emailField">Email</label>
+                <input type="email" class="form-control" id="emailField" placeholder="Entrée email">
+            </div>
+            <div class="form-group">
+                <label for="passwordField">Mot de passe</label>
+                <input type="password" class="form-control" id="passwordField" placeholder="Mot de passe">
+            </div>
+            <!--
+                <button type="submit" class="button-valide button-valide1">Connexion</button>
+            -->
+                
+        </form>
+        <a href="page_admin.html"><button class="button button-co relative bloc">Connexion</button></a>
+
+        <form class="d-none" id="formulaire">
+            <h1>Dates Tournée</h1>
+            <div>
+                <label for="name">Date</label>
+                <input type="date" id="date" name="user_date">
+            </div>
+            <div>
+                <label for="mail">Ville</label>
+                <input type="text" id="ville" name="user_ville">
+            </div>
+            <div>
+                <label for="msg">Pays</label>
+                <input type="text" id="pays" name="user_pays"></input>
+            </div>
+            <div>
+                <label for="msg">Évènement</label>
+                <input type="text" id="event" name="user_event"></input>
+            </div>
+            <button type="submit" class="btn btn-primary">Validé</button>
+        </form>
+
+    </main>
+
+    <div class="flex-container site-footer admin-footer bloc">
+
+            <div class="footer-icon center-text auto bloc">
+                    <a href="https://www.facebook.com/khruangbin/" target="_blank"><img src="images/icons/facebook.png" alt="icone facebook" class="bloc"></a>
+                    <a href="https://www.instagram.com/khruangbin/?hl=fr" target="_blank"><img src="images/icons/instagram.png" alt="icone instagram" class="bloc"></a>
+                    <a href="https://twitter.com/khruangbin" target="_blank"><img src="images/icons/twitter.png" alt="icone twitter" class="bloc"></a>
+            </div>
+
+            <div class="footer-link auto bloc">
+                <center>
+                <a href="album.html"><button class="bloc button button1">L'album</button></a>
+                </center>
+            </div>
+
+            <div class="footer-icon center-text auto bloc">
+                    <a href="https://soundcloud.com/khruangbin" target="_blank"><img src="images/icons/soundcloud.png" alt="icone soundcloud" class="bloc"></a>
+                    <a href="https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk" target="_blank"><img src="images/icons/spotify.png" alt="icone spotify" class="bloc"></a>
+                    <a href="https://itunes.apple.com/gr/artist/khruangbin/478520598" target="_blank"><img src="images/icons/apple.png" alt="icone apple" class="bloc"></a>
+                    <a href="https://www.youtube.com/channel/UCZGBua-dvwfSdcF9AskDIgw" target="_blank"><img src="images/icons/youtube.png" alt="icone youtube" class="bloc"></a>
+            </div>
+        </div>
+    <!-- jQuery et Bootstrap-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
+    <script src="https://unpkg.com/vanilla-router@1.2.7/dist/vanilla-router.min.js"></script>
+    
+    
+    <script src="js/index.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+
+/*************/
+/*** RESET ***/
+/*************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+    vertical-align: baseline;
+    line-height: 1.25;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: inside;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*************/
+/*** FONTS ***/
+/*************/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Montserrat-bold;
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('../fonts/nunitosans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/nunitosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Nunito-bold;
+    src: url('../fonts/nunitosans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/nunitosans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Baskerville Normal'), url('/fonts/baskvl.woff') format('woff');
+}
+@font-face {
+    font-family: Baskerville_Regular;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Baskerville Regular'), url('/fonts/baskervi.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tw Cen MT'), url('/fonts/Tw\ Cen\ MT.woff') format('woff');
+    }
+
+/***********************/
+/*** TEMPLATE STYLES ***/
+/***********************/
+
+html, body{
+    font-size: 100%;
+}
+
+body {
+    text-transform: uppercase;
+    background-color: #fef0cd;
+    color: #33313a;
+    padding-top: 0px;
+}
+
+.main-page {
+    padding-top: 4.6rem;
+  }
+
+/***************/
+/*** Boutons ***/
+/***************/
+
+.button {
+    font-family: 'Tw Cen MT';
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: #fef0cd;
+    border: 1px solid #33313a;
+
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #fef0cd;
+    color: #33313a;
+    border: 1px solid #33313a;
+    
+    border-radius: 50px;
+    padding: 1rem 3rem;
+}
+
+.button1:hover {
+    background-color: #33313a;
+    color: #fef0cd;
+
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+
+.button-achat {
+    font-family: 'Baskerville_Regular';
+    font-size: 2.8rem;
+    
+    color: #33313a;
+
+    font-style: italic;
+
+    margin-top: 1.5rem;
+    padding: 1.2rem 1.5rem;
+
+    position: relative;
+}
+
+.button-achat:hover {
+    background-color: #33313a;
+    color: #fef0cd;
+
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+
+.button-co {
+    border-radius: 10px;
+    padding: 1.1rem 2.2rem;
+}
+
+.button-co:hover {
+    background-color: #33313a;
+    color: #fef0cd;
+
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+  
+/*****************/
+/*** Page menu ***/
+/*****************/
+
+.menu{
+    position: absolute;
+    padding-top: 8rem;
+}
+
+.menu a{
+    font-family: 'Tw Cen MT';
+    color: #33313a;
+    font-size: 1.2631rem;
+    opacity: .5;
+
+    letter-spacing: .2rem;
+    line-height: 3.7rem;
+    text-decoration: none;
+    
+}
+
+.menu a:hover {
+    color: #33313a;
+    opacity: 1;
+}
+
+.menu a.active {
+    color: #33313a;
+    opacity: 1;
+}
+
+.menu-left {
+    margin-left: 7.3rem;
+    
+}
+
+.menu-right {
+    margin-left: 78vw;
+}
+
+/**************/
+/*** Footer ***/
+/**************/
+ 
+.site-footer {
+    margin: 1rem;
+    position: relative;
+  }
+
+.copyright {
+  font-family: 'Tw Cen MT';
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  margin-left: 5rem;
+  margin-top: 1rem;
+  
+  opacity: .3;
+}
+  
+.footer-link {
+  font-family: 'Tw Cen MT';
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+.footer-link a {
+    color: #33313a;
+    
+    text-decoration: none;
+}
+
+.mentions {
+  font-family: 'Tw Cen MT';
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  margin-right: 5rem;
+  margin-top: 1rem;
+
+  text-align: end;
+  opacity: .3;
+}
+
+.footer-icon {
+    margin-top: .5rem;
+}
+
+.footer-icon a {
+    margin-left: .8rem;
+    margin-right: .8rem;
+}
+
+/***************/
+/*** OPTIONS ***/
+/***************/
+
+.flex-container {
+    display: flex;
+ }
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.auto {
+    flex: 1;
+}
+
+/*
+.bloc {
+    border: 3px solid #8AC007;
+}
+*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
