@@ -173,11 +173,13 @@ section {
 }
 
 .photo-profil {
-    width: 25rem;
-    min-width: 5rem;
-    position: absolute;
-    transform: translateX(-12rem);
-    bottom: 0px;
+  width: 15rem;
+  min-width: 5rem;
+  position: absolute;
+  top: 10px;
+
+  border:10px solid rgb(202, 202, 202);
+  border-radius: 65px;
 }
 
 .statut-active {
