@@ -12,110 +12,122 @@
     <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css">
 
     <style>
-        .button.border:after{
-        top: 29px;
+
+        /* Create four equal columns that floats next to eachother */
+        .column {
+        float: left;
+        width: 25%;
         }
-        .button.border:hover:before, .button.border:hover:after {
-        border-bottom: 3px solid #e04e5e;
+
+        /* The Modal (background) */
+        .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
         }
 
-    * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+        /* Modal Content */
+        .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+        }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
+        /* The Close Button */
+        .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+        }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+        .close:hover,
+        .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+        }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+        /* Hide the slides by default */
+        .mySlides {
+        display: none;
+        }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+        /* Next & previous buttons */
+        .prev,
+        .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
+        /* Caption text */
+        .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+        }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+        img.demo {
+        opacity: 0.6;
+        }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+        .active,
+        .demo:hover {
+        opacity: 1;
+        }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+        img.hover-shadow {
+        transition: 0.3s;
+        }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+        .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     </style>
     
 </head>
@@ -135,11 +147,6 @@ img {vertical-align: middle;}
 
         <p class="p-h2">Cliquez n'importe où sur la page</p>
         
-        <section class="copyright">
-            <div class="container">
-                <small>Copyright &copy; Titouan Sans 2019</small>
-            </div>
-        </section>
     </header>
     
 
@@ -150,7 +157,7 @@ img {vertical-align: middle;}
             </div>
             <!--
             <div class="nav-item dropdown">
-                <a href="#" class="relative active" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Status</span></a>
+                <a href="#" class="relative active" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Statut</span></a>
     
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <span class="dropdown-item" href="#">infos</span>
@@ -160,30 +167,31 @@ img {vertical-align: middle;}
                 </div>
             </div>
             -->
-            <a class="statut-active" id="statut" class="relative" data-toggle="collapse" href="#co-status" role="button" aria-expanded="false" aria-controls="co-status"><img src="img/menu-bar.svg" alt="menu barre""/><span class="text-block">Statut</span></a>
+            <a class="relative statut-active" id="statut" data-toggle="collapse" href="#co-statut" role="button" aria-expanded="false" aria-controls="co-statut"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Profil</span></a>
 
-            <a class="relative skill-active" id="skill" data-toggle="collapse" href="#co-skill" role="button" aria-expanded="false" aria-controls="co-skill"><img src="img/menu-bar.svg" alt="menu barre""/><span class="text-block">Compétences</span></a>
+            <a class="relative skill-active" id="skill" data-toggle="collapse" href="#co-skill" role="button" aria-expanded="false" aria-controls="co-skill"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Compétences</span></a>
 
-            <a class="relative work-active" id="work" data-toggle="collapse" href="#co-work" role="button" aria-expanded="false" aria-controls="co-work"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Inventaire</span></a>
+            <a class="relative work-active" id="work" data-toggle="collapse" href="#co-work" role="button" aria-expanded="false" aria-controls="co-work"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Travaux</span></a>
 
-             <a href="#" id="option" class="relative option-active"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Options</span></a>
+            <a class="relative option-active" id="option" data-toggle="collapse" href="#co-option" role="button" aria-expanded="false" aria-controls="co-option"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Me contacter</span></a>
              
         </nav>
         
-        <div class="flex status bloc">
-            <div class="status-text col-9 bloc"> 
+        <div class="flex statut bloc">
+            <div class="statut-text col-9 bloc"> 
                 <div class="margin-top">
                     <div id="co-groupe">
 
                     
-                        <div class="collapse" id="co-status" data-parent="#co-groupe">
+                        <div class="collapse" id="co-statut" data-parent="#co-groupe">
                             <div class="card card-body">
                                 <span>Titouan Sans</span>
-                                <span>Développeur Front-End Junior</span>
+                                <span>Développeur Front-End</span>
                                 <br>
-                                <span>Étudiant en Développement web Front-End à l'École Multimédia de 22 ans.</span> 
+                                <span>Étudiant en Développement web Front-End à l'École Multimédia de 23 ans.</span> 
                                 <span>Mon objectif est de travailler avec toute entreprise désireuse de créer ou d'améliorer son site internet.</span>
-                                
+                                <br>
+                                <span><a href="img/doc/CV_TitouanSans_2020.pdf" target="_blank">Curriculum Vitae</a></span>
                             </div>
                         </div>
 
@@ -192,7 +200,7 @@ img {vertical-align: middle;}
                                 <span>Web : <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-wordpress"></i></span>
                                 <span>Jeu : <i class="fab fa-js-square"></i></span>
                                 <span>Design : <i class="fab fa-adobe"></i></span>
-                                <span>Vidéo : </span>
+                                <span>Vidéo : <img src="img/icon-pr.png" style="width:20px;height:20px;"></span>
                             </div>
                         </div>
                         
@@ -207,87 +215,152 @@ img {vertical-align: middle;}
                                 </span>
 
                                 <span>
-                                    <div class="slideshow-container">
+                                    <div class="row">
+                                    <div class="column">
+                                        <img src="img/work/card/LETTER.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:50%">
+                                    </div>
+                                    <div class="column">
+                                        <img src="img/work/card/NUMBER.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:50%">
+                                    </div>
+                                    <div class="column">
+                                        <img src="img/work/card/PICTURE.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:50%">
+                                    </div>
+                                    <div class="column">
+                                        <img src="img/work/card/PLACE.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width:50%">
+                                    </div>
+                                    <div class="column">
+                                        <img src="img/work/card/WORD.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" style="width:50%">
+                                    </div>
+                                    </div>
 
-                                        <div class="mySlides fade">
-                                          <div class="numbertext">1 / 3</div>
-                                          <img src="img/work/Card/PLACE.jpg" style="width:100%">
-                                          <div class="text">Caption Text</div>
+                                    <!-- The Modal/Lightbox -->
+                                    <div id="myModal" class="modal">
+                                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                                    <div class="modal-content">
+
+                                        <div class="mySlides">
+                                        <div class="numbertext">1 / 5</div>
+                                        <img src="img/work/card/LETTER.jpg" style="width:100%">
                                         </div>
-                                        
-                                        <div class="mySlides fade">
-                                          <div class="numbertext">2 / 3</div>
-                                          <img src="img/work/Card/WORD.jpg" style="width:100%">
-                                          <div class="text">Caption Two</div>
+
+                                        <div class="mySlides">
+                                        <div class="numbertext">2 / 5</div>
+                                        <img src="img/work/card/NUMBER.jpg" style="width:100%">
                                         </div>
-                                        
-                                        <div class="mySlides fade">
-                                          <div class="numbertext">3 / 3</div>
-                                          <img src="img/work/Card/LETTER.jpg" style="width:100%">
-                                          <div class="text">Caption Three</div>
+
+                                        <div class="mySlides">
+                                        <div class="numbertext">3 / 5</div>
+                                        <img src="img/work/card/PICTURE.jpg" style="width:100%">
                                         </div>
-                                        
+
+                                        <div class="mySlides">
+                                        <div class="numbertext">4 / 5</div>
+                                        <img src="img/work/card/PLACE.jpg" style="width:100%">
+                                        </div>
+
+                                        <div class="mySlides">
+                                        <div class="numbertext">5 / 5</div>
+                                        <img src="img/work/card/PLACE.jpg" style="width:100%">
+                                        </div>
+
+                                        <!-- Next/previous controls -->
                                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                        
+
+                                        <!-- Caption text -->
+                                        <div class="caption-container">
+                                        <p id="caption"></p>
+                                        </div>
+
+                                        <!-- Thumbnail image controls -->
+                                        <div class="column">
+                                        <img class="demo" src="img/work/card/LETTER.jpg" onclick="currentSlide(1)" alt="c-letter">
+                                        </div>
+
+                                        <div class="column">
+                                        <img class="demo" src="img/work/card/NUMBER.jpg" onclick="currentSlide(2)" alt="c-number">
+                                        </div>
+
+                                        <div class="column">
+                                        <img class="demo" src="img/work/card/PICTURE.jpg" onclick="currentSlide(3)" alt="c-picture">
+                                        </div>
+
+                                        <div class="column">
+                                        <img class="demo" src="img/work/card/PLACE.jpg" onclick="currentSlide(4)" alt="c-place">
+                                        </div>
+
+                                        <div class="column">
+                                        <img class="demo" src="img/work/card/WORD.jpg" onclick="currentSlide(5)" alt="c-word">
+                                        </div>
                                     </div>
-                                    <br>
-                                    
-                                    <div style="text-align:center">
-                                    <span class="dot" onclick="currentSlide(1)"></span> 
-                                    <span class="dot" onclick="currentSlide(2)"></span> 
-                                    <span class="dot" onclick="currentSlide(3)"></span> 
                                     </div>
                         
                                 </span>
 
-                                <span class="flex">
-                                    <svg class="work-bg" width="400" height="50"></svg>
-                                    <img src="img/work/projet_3.jpg" alt="game_maze" class="index-0">
-                                </span>
+                            </div>
 
+                        </div>
+
+                        <div class="collapse" id="co-option" data-parent="#co-groupe">
+                            <div class="card card-body">
+                                <span>Mail : <a href = "mailto: Titouan.sanshochart@gmail.com" target="_blank">Titouan.sanshochart@gmail.com</a></span>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div> 
             
 
             <div class="col bloc">
-                <img src="img/photo_profil.png" alt="photo_profil" class="photo-profil">
+                <img src="img/photo.png" alt="photo_profil" class="photo-profil">
             </div>
 
         </div>
     </mainclass="appear">
 
     <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+    // Open the Modal
+    function openModal() {
+    document.getElementById("myModal").style.display = "block";
+    }
 
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
+    // Close the Modal
+    function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+    }
 
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-        function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        }
-    </script>
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

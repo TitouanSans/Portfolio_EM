@@ -19,7 +19,7 @@ $("#statut").click(function() {
         $('.skill-active').removeClass('active');
         $('.work-active').removeClass('active');
         $('.option-active').removeClass('active');
-        console.log(statut_stat);
+        console.log(statut);
 });
 
 $("#skill").click(function() {
@@ -27,7 +27,6 @@ $("#skill").click(function() {
         $('.statut-active').removeClass('active');
         $('.work-active').removeClass('active');
         $('.option-active').removeClass('active');
-        console.log(skill_stat);
 });
 
 $("#work").click(function() {
@@ -35,7 +34,6 @@ $("#work").click(function() {
         $('.statut-active').removeClass('active');
         $('.skill-active').removeClass('active');
         $('.option-active').removeClass('active');
-        console.log(work);
 });
 
 $("#option").click(function() {
