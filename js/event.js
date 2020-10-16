@@ -1,14 +1,13 @@
-<<<<<<< HEAD
 
 let intro = 0;
 
-$("#button").click(function() {
+$("#home").click(function() {
 
     if (intro < 1) {
-        $('.transform').toggleClass('transform-active');
-        $('.appear').toggleClass('appear-active');
+        $('.homepage').toggleClass('homepage-disappear');
+        $('.site').toggleClass('site-appear');
         intro = 1;
-        console.log("BOUTON");
+        console.log("ACCUEIL");
     } else {
         console.log("NON");
     }
@@ -20,7 +19,7 @@ $("#statut").click(function() {
         $('.skill-active').removeClass('active');
         $('.work-active').removeClass('active');
         $('.option-active').removeClass('active');
-        console.log(statut);
+        console.log("statut actif");
 });
 
 $("#skill").click(function() {
@@ -28,6 +27,7 @@ $("#skill").click(function() {
         $('.statut-active').removeClass('active');
         $('.work-active').removeClass('active');
         $('.option-active').removeClass('active');
+        console.log("compétence actif");
 });
 
 $("#work").click(function() {
@@ -35,6 +35,7 @@ $("#work").click(function() {
         $('.statut-active').removeClass('active');
         $('.skill-active').removeClass('active');
         $('.option-active').removeClass('active');
+        console.log("travaux actif");
 });
 
 $("#option").click(function() {
@@ -42,51 +43,5 @@ $("#option").click(function() {
         $('.statut-active').removeClass('active');
         $('.skill-active').removeClass('active');
         $('.work-active').removeClass('active');
-        console.log(option);
-=======
-
-let intro = 0;
-
-$("#button").click(function() {
-
-    if (intro < 1) {
-        $('.transform').toggleClass('transform-active');
-        $('.appear').toggleClass('appear-active');
-        intro = 1;
-        console.log("BOUTON");
-    } else {
-        console.log("NON");
-    }
-    
-});
-
-$("#statut").click(function() {
-        $('.statut-active').addClass('active');
-        $('.skill-active').removeClass('active');
-        $('.work-active').removeClass('active');
-        $('.option-active').removeClass('active');
-        console.log(statut);
-});
-
-$("#skill").click(function() {
-        $('.skill-active').addClass('active');
-        $('.statut-active').removeClass('active');
-        $('.work-active').removeClass('active');
-        $('.option-active').removeClass('active');
-});
-
-$("#work").click(function() {
-        $('.work-active').addClass('active');
-        $('.statut-active').removeClass('active');
-        $('.skill-active').removeClass('active');
-        $('.option-active').removeClass('active');
-});
-
-$("#option").click(function() {
-        $('.option-active').addClass('active');
-        $('.statut-active').removeClass('active');
-        $('.skill-active').removeClass('active');
-        $('.work-active').removeClass('active');
-        console.log(option);
->>>>>>> 4db529ca5337cabd4b400f6d19762cd569c4cf01
+        console.log("contact actif");
 });
