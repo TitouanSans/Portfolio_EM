@@ -1,13 +1,13 @@
 
 let intro = 0;
 
-$("#button").click(function() {
+$("#home").click(function() {
 
     if (intro < 1) {
-        $('.transform').toggleClass('transform-active');
-        $('.appear').toggleClass('appear-active');
+        $('.homepage').toggleClass('homepage-disappear');
+        $('.site').toggleClass('site-appear');
         intro = 1;
-        console.log("BOUTON");
+        console.log("ACCUEIL");
     } else {
         console.log("NON");
     }
@@ -19,7 +19,7 @@ $("#statut").click(function() {
         $('.skill-active').removeClass('active');
         $('.work-active').removeClass('active');
         $('.option-active').removeClass('active');
-        console.log(statut);
+        console.log("statut actif");
 });
 
 $("#skill").click(function() {
@@ -27,6 +27,7 @@ $("#skill").click(function() {
         $('.statut-active').removeClass('active');
         $('.work-active').removeClass('active');
         $('.option-active').removeClass('active');
+        console.log("compétence actif");
 });
 
 $("#work").click(function() {
@@ -34,6 +35,7 @@ $("#work").click(function() {
         $('.statut-active').removeClass('active');
         $('.skill-active').removeClass('active');
         $('.option-active').removeClass('active');
+        console.log("travaux actif");
 });
 
 $("#option").click(function() {
@@ -41,4 +43,5 @@ $("#option").click(function() {
         $('.statut-active').removeClass('active');
         $('.skill-active').removeClass('active');
         $('.work-active').removeClass('active');
-        console.log(option);
+        console.log("contact actif");
+});

@@ -1,53 +1,42 @@
-<<<<<<< HEAD
 
 /******************/
 /*** ANIMATIONS ***/
 /******************/
 
-.transform {
+.homepage {
     transition-duration: 2s;
 }
 
-.transform-active {
+.homepage-disappear {
     opacity: 0;
     display: none;
 }
 
-.appear {
+.site {
     opacity: 0;
     transition-duration: 2s;
 }
 
-.appear-active {
+.site-appear {
     opacity: 1;
+    display: flex;
 }
 
 /*************/
 /*** FONTS ***/
 /*************/
 
-.p-h1 {
+.title, .title2 { 
     font-family: Montserrat;
     font-size: 7rem;
     padding: 0;
     margin: 0; 
     text-decoration: underline;
-}
-
-.p-h2 {
-    font-family: Montserrat;
-    font-size: 2rem;
-    padding-top: 10vh;
     text-align: center;
-}
-
-.menu-title {
-    justify-content: center;
 }
 
 .title {
     text-transform: uppercase;
-    text-align: center;
 }
 
 .title2 {
@@ -55,8 +44,13 @@
     letter-spacing: 4.4rem;
 }
 
-.work-title {
-    z-index: 3;
+.title-p {
+    font-family: Montserrat;
+    font-size: 2rem;
+    margin-top: 10rem;
+    /* position:absolute;
+    bottom:0px; */
+    text-align: center;
 }
 
 .work-bg {
@@ -73,16 +67,7 @@
 
 header {
     font-family: Montserrat;
-    padding-top: 20vh;
-}
-
-section {
-    padding-bottom: 3rem;
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    padding-top: 30vh;
 }
 
 /*******************/
@@ -90,8 +75,6 @@ section {
 /*******************/
 
 .menu {
-    width: 34rem;
-    height: 10rem;
     color: #ffffff;
     margin-top: 0rem;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.787), 60%, rgba(255, 255, 255, 0));
@@ -109,7 +92,11 @@ section {
 /***MENU***/
 /**********/
 
-/* Position titre menu*/
+nav {
+    flex-grow: 1;
+}
+
+/* Position titres menu*/
     .text-block {
         position: absolute;
         left: 180px;
@@ -120,12 +107,10 @@ section {
 /* Modification bouton complet */
     nav a {
         display: block;
-        margin-top: 5rem;
+        margin-top: 2rem;
         transform: translateX(-9rem); 
         color: rgba(156, 156, 156, 0.685); 
         transition: .2s;
-        
-        width: 50vh;
     }
 
     nav a img {
@@ -136,13 +121,6 @@ section {
         color: #ffffff;
         transform: translateX(-6rem);
         transition: .2s;
-    }
-    
-    .card {
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 0;
-        width: 44rem;
     }
 
     .dropdown-item {
@@ -159,54 +137,27 @@ section {
 /*** PRINCIPAL ***/
 /*****************/
 
-.statut {
-      margin-left: 30rem;
-      height: 100vh;
-  }
+main {
+    background-color: rgba(20, 20, 20, 0.507);
+}
 
 .statut-text {
     background-color: rgba(0, 0, 0, 0.7);
     color: #ffffff;
 }
 
-.margin-top {
-    margin-top: 5rem;
-}
+
+/***************/
+/*** PICTURE ***/
+/***************/
 
 .photo-profil {
-  width: 15rem;
-  min-width: 5rem;
-  position: absolute;
-  top: 10px;
+    width: 15rem;
+    min-width: 5rem;
 
-  border:10px solid rgb(202, 202, 202);
-  border-radius: 65px;
+    border:6px solid rgb(202, 202, 202);
+    border-radius: 65px;
 }
-
-.statut-active {
-
-}
-
-.skill-active {
-
-}
-
-.work-active {
-
-}
-
-.option-active {
-
-}
-
-/************/
-/*** CARD ***/
-/************/
-
-
-/************/
-/*** ICON ***/
-/************/
 
 /*************/
 /*** EXTRA ***/
@@ -222,238 +173,16 @@ section {
     z-index: auto;
 }
 
-/*
+
 .bloc {
-    border: 1px solid #8AC007;
-}
-*/
-=======
-
-/******************/
-/*** ANIMATIONS ***/
-/******************/
-
-.transform {
-    transition-duration: 2s;
+    border: 2px solid #8AC007;
 }
 
-.transform-active {
-    opacity: 0;
-    display: none;
+.bloc2 {
+    border: 2px solid #c00707;
 }
 
-.appear {
-    opacity: 0;
-    transition-duration: 2s;
+.bloc3 {
+    border: 2px solid #ba07c0;
 }
 
-.appear-active {
-    opacity: 1;
-}
-
-/*************/
-/*** FONTS ***/
-/*************/
-
-.p-h1 {
-    font-family: Montserrat;
-    font-size: 7rem;
-    padding: 0;
-    margin: 0; 
-    text-decoration: underline;
-}
-
-.p-h2 {
-    font-family: Montserrat;
-    font-size: 2rem;
-    padding-top: 10vh;
-    text-align: center;
-}
-
-.menu-title {
-    justify-content: center;
-}
-
-.title {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.title2 {
-    text-transform: uppercase;
-    letter-spacing: 4.4rem;
-}
-
-.work-title {
-    z-index: 3;
-}
-
-.work-bg {
-    position: absolute;
-    color: #ffffff;
-    margin-top: 0rem;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.787), 60%, rgba(255, 255, 255, 0));
-    z-index: 2;
-}
-
-/********************/
-/*** PAGE CONTENT ***/
-/********************/
-
-header {
-    font-family: Montserrat;
-    padding-top: 20vh;
-}
-
-section {
-    padding-bottom: 3rem;
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-/*******************/
-/***MENU BANNIERE***/
-/*******************/
-
-.menu {
-    width: 34rem;
-    height: 10rem;
-    color: #ffffff;
-    margin-top: 0rem;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.787), 60%, rgba(255, 255, 255, 0));
-
-    transform: translateX(-6rem);
-}
-
-.menu p {
-    padding-left: 12rem;
-    line-height: 14rem;
-    font-size: 3rem;
-}
-
-/**********/
-/***MENU***/
-/**********/
-
-/* Position titre menu*/
-    .text-block {
-        position: absolute;
-        left: 180px;
-        top: 4px;
-        font-size: 2rem;
-    }
-
-/* Modification bouton complet */
-    nav a {
-        display: block;
-        margin-top: 5rem;
-        transform: translateX(-9rem); 
-        color: rgba(156, 156, 156, 0.685); 
-        transition: .2s;
-        
-        width: 50vh;
-    }
-
-    nav a img {
-        opacity: .7;
-    }
-    
-    nav a:hover {
-        color: #ffffff;
-        transform: translateX(-6rem);
-        transition: .2s;
-    }
-    
-    .card {
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 0;
-        width: 44rem;
-    }
-
-    .dropdown-item {
-        color: rgb(255, 255, 255);
-    }
-
-    .dropdown-item:hover, .dropdown-item:focus {
-        color: #ffffff;
-        text-decoration: none;
-        background-color: transparent;
-    }
-
-/*****************/
-/*** PRINCIPAL ***/
-/*****************/
-
-.statut {
-      margin-left: 30rem;
-      height: 100vh;
-  }
-
-.statut-text {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-}
-
-.margin-top {
-    margin-top: 5rem;
-}
-
-.photo-profil {
-  width: 15rem;
-  min-width: 5rem;
-  position: absolute;
-  top: 10px;
-
-  border:10px solid rgb(202, 202, 202);
-  border-radius: 65px;
-}
-
-.statut-active {
-
-}
-
-.skill-active {
-
-}
-
-.work-active {
-
-}
-
-.option-active {
-
-}
-
-/************/
-/*** CARD ***/
-/************/
-
-
-/************/
-/*** ICON ***/
-/************/
-
-/*************/
-/*** EXTRA ***/
-/*************/
-
-.active {
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-    transform: translateX(-6rem);
-}
-
-.index-0 {
-    z-index: auto;
-}
-
-/*
-.bloc {
-    border: 1px solid #8AC007;
-}
-*/
->>>>>>> 4db529ca5337cabd4b400f6d19762cd569c4cf01

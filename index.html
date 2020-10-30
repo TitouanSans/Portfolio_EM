@@ -6,244 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Titouan Sans</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
     <link rel="stylesheet" href="css/templates.css">
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css">
     
 </head>
 
-<body id="button" value="Click Me">
-    <!--INTRO-->
-    <header class="transform">
+<body id="home" value="Click Me">
+    <header class="homepage">
 
-        <div class="container bloc">
-            <div class="flex menu-title bloc">
-                <p class="p-h1 title bloc">Titouan</p>
-            </div>
-            <div class="flex menu-title bloc">
-                <p class="p-h1 title2 bloc">San</p>
-                <p class="p-h1 title bloc">S</p>
-            </div>
+        <div>
+            <p class="title">Titouan</p>
+        </div>
+        <div class="flex center">
+            <p class="title2">San</p>
+            <p class="title">S</p>
         </div>
 
-        <p class="p-h2">Cliquez n'importe où sur la page</p>
+        <p class="title-p">Cliquez pour commencer</p>
         
     </header>
-    
 
-    <main class="appear">         
-        <nav class="fixed"> 
-            <div class="menu bloc">
+    <div class="site">         
+        <nav class="bloc2"> 
+            <div class="menu">
                 <p>Menu</p>
             </div>
-            <!--
-            <div class="nav-item dropdown">
-                <a href="#" class="relative active" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Statut</span></a>
-    
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <span class="dropdown-item" href="#">infos</span>
-                    <span class="dropdown-item" href="#">attributs</span>
-                    <span class="dropdown-item" href="#">contact</span>
-                    <span class="dropdown-item" href="#">CV</span>
-                </div>
-            </div>
-            -->
-            <a class="relative statut-active" id="statut" data-toggle="collapse" href="#co-statut" role="button" aria-expanded="false" aria-controls="co-statut"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Profil</span></a>
 
-            <a class="relative skill-active" id="skill" data-toggle="collapse" href="#co-skill" role="button" aria-expanded="false" aria-controls="co-skill"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Compétences</span></a>
+            <a class="relative statut-active" id="statut"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Profil</span></a>
 
-            <a class="relative work-active" id="work" data-toggle="collapse" href="#co-work" role="button" aria-expanded="false" aria-controls="co-work"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Travaux</span></a>
+            <a class="relative skill-active" id="skill"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Compétences</span></a>
 
-            <a class="relative option-active" id="option" data-toggle="collapse" href="#co-option" role="button" aria-expanded="false" aria-controls="co-option"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Me contacter</span></a>
+            <a class="relative work-active" id="work"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Travaux</span></a>
+
+            <a class="relative option-active" id="option"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Me contacter</span></a>
              
         </nav>
         
-        <div class="flex statut bloc">
-            <div class="statut-text col-9 bloc"> 
-                <div class="margin-top">
-                    <div id="co-groupe">
+        <main class="bloc">
 
-                    
-                        <div class="collapse" id="co-statut" data-parent="#co-groupe">
-                            <div class="card card-body">
-                                <span>Titouan Sans</span>
-                                <span>Développeur Front-End</span>
-                                <br>
-                                <span>Étudiant en Développement web Front-End à l'École Multimédia de 23 ans.</span> 
-                                <span>Mon objectif est de travailler avec toute entreprise désireuse de créer ou d'améliorer son site internet.</span>
-                                <br>
-                                <span><a href="img/doc/CV_TitouanSans_2020.pdf" target="_blank">Curriculum Vitae</a></span>
-                                <span>test</span>
-                            </div>
-                        </div>
+            <article id="co-statut" class="bloc">
+                <span>Titouan Sans</span>
+                <span>Développeur Front-End</span>
+                <br>
+                <span>Étudiant en Développement web Front-End à l'École Multimédia de 23 ans.</span> 
+                <span>Mon objectif est de travailler avec toute entreprise désireuse de créer ou d'améliorer son site internet.</span>
+                <br>
+                <span><a href="img/doc/CV_TitouanSans_2020.pdf" target="_blank">Curriculum Vitae</a></span>
+            </article>
 
-                        <div class="collapse" id="co-skill" data-parent="#co-groupe">
-                            <div class="card card-body">
-                                <span>Web : <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-wordpress"></i></span>
-                                <span>Jeu : <i class="fab fa-js-square"></i></span>
-                                <span>Design : <i class="fab fa-adobe"></i></span>
-                                <span>Vidéo : <img src="img/icon-pr.png" style="width:20px;height:20px;"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="collapse" id="co-work" data-parent="#co-groupe">
-                            <div class="card card-body container">
-                                <span class="flex">
-                                    <a href="Khruangbin/index.html" target="_blank">
-                                        <svg class="work-bg" width="400" height="50"></svg>
-                                        <img src="img/work/Khruangbin_min.jpg" alt="Khruangbin" class="index-0" width="400">
-                                    </a>
-
-                                </span>
-
-                                <span>
-                                    <div class="row">
-                                    <div class="column">
-                                        <img src="img/work/card/LETTER.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:50%">
-                                    </div>
-                                    <div class="column">
-                                        <img src="img/work/card/NUMBER.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:50%">
-                                    </div>
-                                    <div class="column">
-                                        <img src="img/work/card/PICTURE.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:50%">
-                                    </div>
-                                    <div class="column">
-                                        <img src="img/work/card/PLACE.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width:50%">
-                                    </div>
-                                    <div class="column">
-                                        <img src="img/work/card/WORD.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" style="width:50%">
-                                    </div>
-                                    </div>
-
-                                    <!-- The Modal/Lightbox -->
-                                    <div id="myModal" class="modal">
-                                    <span class="close cursor" onclick="closeModal()">&times;</span>
-                                    <div class="modal-content">
-
-                                        <div class="mySlides">
-                                        <div class="numbertext">1 / 5</div>
-                                        <img src="img/work/card/LETTER.jpg" style="width:100%">
-                                        </div>
-
-                                        <div class="mySlides">
-                                        <div class="numbertext">2 / 5</div>
-                                        <img src="img/work/card/NUMBER.jpg" style="width:100%">
-                                        </div>
-
-                                        <div class="mySlides">
-                                        <div class="numbertext">3 / 5</div>
-                                        <img src="img/work/card/PICTURE.jpg" style="width:100%">
-                                        </div>
-
-                                        <div class="mySlides">
-                                        <div class="numbertext">4 / 5</div>
-                                        <img src="img/work/card/PLACE.jpg" style="width:100%">
-                                        </div>
-
-                                        <div class="mySlides">
-                                        <div class="numbertext">5 / 5</div>
-                                        <img src="img/work/card/PLACE.jpg" style="width:100%">
-                                        </div>
-
-                                        <!-- Next/previous controls -->
-                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                                        <!-- Caption text -->
-                                        <div class="caption-container">
-                                        <p id="caption"></p>
-                                        </div>
-
-                                        <!-- Thumbnail image controls -->
-                                        <div class="column">
-                                        <img class="demo" src="img/work/card/LETTER.jpg" onclick="currentSlide(1)" alt="c-letter">
-                                        </div>
-
-                                        <div class="column">
-                                        <img class="demo" src="img/work/card/NUMBER.jpg" onclick="currentSlide(2)" alt="c-number">
-                                        </div>
-
-                                        <div class="column">
-                                        <img class="demo" src="img/work/card/PICTURE.jpg" onclick="currentSlide(3)" alt="c-picture">
-                                        </div>
-
-                                        <div class="column">
-                                        <img class="demo" src="img/work/card/PLACE.jpg" onclick="currentSlide(4)" alt="c-place">
-                                        </div>
-
-                                        <div class="column">
-                                        <img class="demo" src="img/work/card/WORD.jpg" onclick="currentSlide(5)" alt="c-word">
-                                        </div>
-                                    </div>
-                                    </div>
-                        
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="collapse" id="co-option" data-parent="#co-groupe">
-                            <div class="card card-body">
-                                <span>Mail : <a href = "mailto: Titouan.sanshochart@gmail.com" target="_blank">Titouan.sanshochart@gmail.com</a></span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div> 
+            <article id="co-skill" class="bloc">
+                <span>Web : <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-wordpress"></i></span>
+                <span>Jeu : <i class="fab fa-js-square"></i></span>
+                <span>Design : <i class="fab fa-adobe"></i></span>
+                <span>Vidéo : <img src="img/icon-pr.png" style="width:20px;height:20px;"></span>
+            </article>
             
+            <article id="co-work" class="bloc">
+                <a href="Khruangbin/index.html" target="_blank">
+                    <svg class="work-bg" width="400" height="50"></svg>
+                    <img src="img/work/Khruangbin_min.jpg" alt="Khruangbin" class="index-0" width="400">
+                </a>
+            </article>
 
-            <div class="col bloc">
-                <img src="img/photo.png" alt="photo_profil" class="photo-profil">
-            </div>
+            <article id="co-option" class="bloc">
+                <span>Mail : <a href = "mailto: Titouan.sanshochart@gmail.com" target="_blank">Titouan.sanshochart@gmail.com</a></span>
+                
+            </article>
 
+        </main>
+
+        <div class="pp bloc3">
+            <img src="img/photo.png" alt="photo_profil" class="photo-profil">
         </div>
-    </main>
 
-    <script>
-        // Open the Modal
-        function openModal() {
-        document.getElementById("myModal").style.display = "block";
-        }
+    </div>
 
-        // Close the Modal
-        function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-        }
+    <p>loremWhat is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, rediving essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-        var slideIndex = 1;
-        showSlides(slideIndex);
+                    Why do we use it?
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
 
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
+                    Where does it come from?
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-        function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-        }
-    </script>
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+                    Where can I get some?
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                </p>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
