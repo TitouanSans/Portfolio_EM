@@ -2,109 +2,148 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Titouan Sans</title>
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/templates.css">
-    <link rel="stylesheet" href="css/accueil.css">
-    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Titouan Sans - Accueil</title>
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body id="button" value="Click Me">
-    <!--INTRO-->
-    <header class="transform">
+<body>
 
-        <div class="container bloc">
-            <div class="flex menu-title bloc">
-                <p class="p-h1 title bloc">Titouan</p>
+    <nav class="tmp-menu" data-state="closed">
+
+        <a href="index.html" class="home-link">Titouan Sans</a>
+
+        <div class="site-links">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="flex menu-title bloc">
-                <p class="p-h1 title2 bloc">San</p>
-                <p class="p-h1 title bloc">S</p>
-            </div>
+            <a href="index.html" class="active">Accueil</a>
+            <a href="profil.html">Présentation</a>
+            <a href="competences.html">Compétences</a>
+            <a href="portfolio.html">Projets</a>
+            <a href="images/competences/CV_TitouanSans_2021.pdf" target="_blank">CV</a>
+            <a href="contact.html">Contact</a>
         </div>
 
-        <p class="p-h2">Cliquez n'importe où sur la page</p>
-        
-    </header>
-    
+    </nav>
 
-    <main class="appear">         
-        <nav class="fixed"> 
-            <div class="menu bloc">
-                <p>Menu</p>
+    <main class="tmp-main home">
+
+        <header>
+
+            <div class="image">
+                <img src="images/index/photo_profil.png" alt="Photo Titouan Sans" class="img-responsive">
+
             </div>
-            <a class="statut-active" id="statut" class="relative" data-toggle="collapse" href="#co-status" role="button" aria-expanded="false" aria-controls="co-status"><img src="img/menu-bar.svg" alt="menu barre""/><span class="text-block">Statut</span></a>
-
-            <a class="relative skill-active" id="skill" data-toggle="collapse" href="#co-skill" role="button" aria-expanded="false" aria-controls="co-skill"><img src="img/menu-bar.svg" alt="menu barre""/><span class="text-block">Compétences</span></a>
-
-            <a class="relative work-active" id="work" data-toggle="collapse" href="#co-work" role="button" aria-expanded="false" aria-controls="co-work"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Inventaire</span></a>
-
-             <a href="#" id="option" class="relative option-active"><img src="img/menu-bar.svg" alt="menu barre"/><span class="text-block">Options</span></a>
-             
-        </nav>
-        
-        <div class="flex status bloc">
-            <div class="status-text col-9 bloc"> 
-                <div class="margin-top">
-                    <div id="co-groupe">
-
-                    
-                        <div class="collapse" id="co-status" data-parent="#co-groupe">
-                            <div class="card card-body">
-                                <span>Titouan Sans</span>
-                                <span>Développeur Front-End Junior</span>
-                                <br>
-                                <span>Étudiant en Développement web Front-End à l'École Multimédia de 22 ans.</span> 
-                                <span>Mon objectif est de travailler avec toute entreprise désireuse de créer ou d'améliorer son site internet.</span>
-                                
-                            </div>
-                        </div>
-
-                        <div class="collapse" id="co-skill" data-parent="#co-groupe">
-                            <div class="card card-body">
-                                <span>Web : <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-wordpress"></i></span>
-                                <span>Jeu : <i class="fab fa-js-square"></i></span>
-                                <span>Design : <i class="fab fa-adobe"></i></span>
-                                <span>Vidéo : </span>
-                            </div>
-                        </div>
-                        
-                        <div class="collapse" id="co-work" data-parent="#co-groupe">
-                            <div class="card card-body container">
-                                <span class="flex">
-                                    <a href="http://titouansans.alwaysdata.net/Khruangbin/" target="_blank">
-                                        <svg class="work-bg" width="400" height="50"></svg>
-                                        <img src="img/work/Khruangbin_min.jpg" alt="Khruangbin" class="index-0" width="400">
-                                    </a>
-
-                                </span>
-
-                                <span class="flex">
-                                    <svg class="work-bg" width="400" height="50"></svg>
-                                    <img src="img/work/projet_3.jpg" alt="game_maze" class="index-0">
-                                </span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
             
-
-            <div class="col bloc">
-                <img src="img/photo_profil.png" alt="photo_profil" class="photo-profil">
+            <div class="text">
+                <h1 class="tmp-title1">Titouan Sans</h1>
+                <p>
+                    23 ans <span class="picto-location"></span> Vanves, Île de France<br>
+                    Étudiant en 3ème année à L’École Multimédia<br>
+                    Développeur front-end <br>
+                    <strong>Recherche un poste en alternance - durée 1 an <br>
+                    3 semaines entreprise / 1 semaine école <br>
+                    Disponibilité immédiate</strong>
+                </p>
+                <div class="buttons">
+                    <a href="images/competences/CV_TitouanSans_2021.pdf" target="_blank" class="tmp-btn">Télécharger mon CV</a>
+                    <br>
+                    <a href="contact.html" class="tmp-btn">Me contacter</a>
+                </div>
             </div>
 
-        </div>
+        </header>
+
+        <nav class="headings">
+
+            <a href="">
+                <img src="images/index/presentation.svg" alt="Pictogramme représentant une carte d'identité">
+                <h2>Présentation</h2>
+                <p>Mes renseignements personnels, mon parcours, et mes passions</p>
+            </a>
+            <a href="competences.html">
+                <img src="images/index/skills.svg" alt="Pictogramme représentant une carte d'identité">
+                <h2>Compétences</h2>
+                <p>La liste de mes compétences notamment en programation et en développement</p>
+            </a>
+            <a href="portfolio.html">
+                <img src="images/index/projects.svg" alt="Pictogramme représentant une carte d'identité">
+                <h2>Projets</h2>
+                <p>Les projets réalisés à l’école et en stage ainsi que mes réalisations personnelles</p>
+            </a>
+
+        </nav>
+
+        <section class="last-projects">
+
+            <h2 class="tmp-title2">Mes derniers projets</h2>
+
+            <div class="projects">
+                
+                <a href="portfolio.html" class="project">
+                    <img src="images/projets/projet1.jpg" alt="Photo du projet ???" class="img-responsive">
+                    <div class="text">
+                        <h3>Titre du projet</h3>
+                        <span>Date</span>
+                        <p></p>
+                    </div>
+                </a>
+
+                <a href="portfolio.html" class="project">
+                    <img src="images/projets/projet2.jpg" alt="Photo du projet ???" class="img-responsive">
+                    <div class="text">
+                        <h3>Titre du projet</h3>
+                        <span>Date</span>
+                        <p></p>
+                    </div>
+                </a>
+                
+                <a href="portfolio.html" class="project">
+                    <img src="images/projets/projet3.jpg" alt="Photo du projet ???" class="img-responsive">
+                    <div class="text">
+                        <h3>Titre du projet</h3>
+                        <span>Date</span>
+                        <p></p>
+                    </div>
+                </a>
+                    
+            </div>
+
+            <a href="portfolio.html" class="tmp-btn">Voir tous mes projets</a>
+
+        </section>
+
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-    <script src="js/event.js"></script>
+    <footer class="tmp-footer">
+
+        <section class="contact">
+            <h1>Titouan Sans</h1>
+            <a href="mailto:titouan.sanshochart@gmail.com">titouan.sanshochart@gmail.com</a><br>
+            <a href="">06 46 36 42 28</a><br>
+            <a href="https://www.linkedin.com/in/titouan-sans/" target="_blank">Suivez-moi sur <strong>Linkedin</strong></a><br>
+            <a href="https://github.com/TitouanSans" target="_blank">Suivez-moi sur <strong>Github</strong></a>
+        </section>
+
+        <nav class="menu">
+            <h2>Menu</h2>
+            <div class="links">
+                <a href="index.html">Accueil</a><br>
+                <a href="profil.html">Présentation</a><br>
+                <a href="competences.html">Compétences</a><br>
+                <a href="portfolio.html">Projets</a><br>
+                <a href="images/competences/CV_TitouanSans_2021.pdf" target="_blank">CV</a><br>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+    </footer>
+    
+    <!-- Script de la bascule du menu -->
+    <script src="scripts/menu.js"></script>
+
 </body>
 </html>
