@@ -10,23 +10,6 @@
 <body>
 
     <nav class="tmp-menu" data-state="closed">
-
-        <a href="index.html" class="home-link">Titouan Sans</a>
-
-        <div class="site-links">
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a href="index.html" class="active">Accueil</a>
-            <a href="profil.html">Présentation</a>
-            <a href="competences.html">Compétences</a>
-            <a href="portfolio.html">Projets</a>
-            <a href="images/competences/CV_TitouanSans_2021.pdf" target="_blank">CV</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
     </nav>
 
     <main class="tmp-main home">
@@ -51,7 +34,7 @@
                 <div class="buttons">
                     <a href="images/competences/CV_TitouanSans_2021.pdf" target="_blank" class="tmp-btn">Télécharger mon CV</a>
                     <br>
-                    <a href="contact.html" class="tmp-btn">Me contacter</a>
+                    <a href="#footer-contact" class="tmp-btn">Me contacter</a>
                 </div>
             </div>
 
@@ -59,12 +42,15 @@
 
         <nav class="headings">
 
-            <a href="">
+            <a>
+                <h2>À VENIR</h2>
                 <img src="images/index/presentation.svg" alt="Pictogramme représentant une carte d'identité">
                 <h2>Présentation</h2>
                 <p>Mes renseignements personnels, mon parcours, et mes passions</p>
             </a>
-            <a href="competences.html">
+            <!-- <a href="competences.html"> -->
+            <a href="images/competences/CV_TitouanSans_2021.pdf" target="_blank">
+                <h2>À VENIR</h2>
                 <img src="images/index/skills.svg" alt="Pictogramme représentant une carte d'identité">
                 <h2>Compétences</h2>
                 <p>La liste de mes compétences notamment en programation et en développement</p>
@@ -83,15 +69,15 @@
 
             <div class="projects">
                 
-                <a href="portfolio.html" class="project">
-                    <img src="images/projets/projet1.jpg" alt="Photo du projet ???" class="img-responsive">
+                <a href="http://titouansans.alwaysdata.net/Khruangbin/" class="project" target="_blank">
+                    <img src="images/projets/Khruangbin_min.jpg" alt="Photo du projet Khruangbin" class="img-responsive">
                     <div class="text">
-                        <h3>Titre du projet</h3>
-                        <span>Date</span>
-                        <p></p>
+                        <h3>LAB201 - Site Khruangbin</h3>
+                        <span>mars 2020</span>
+                        <p>Site promotionnel indépendant de l'album 'Con Todo El Mundo' du groupe de musique Khruangbin, créé en groupe dans le cadre du LAB201.</p>
                     </div>
                 </a>
-
+<!-- 
                 <a href="portfolio.html" class="project">
                     <img src="images/projets/projet2.jpg" alt="Photo du projet ???" class="img-responsive">
                     <div class="text">
@@ -109,7 +95,7 @@
                         <p></p>
                     </div>
                 </a>
-                    
+                     -->
             </div>
 
             <a href="portfolio.html" class="tmp-btn">Voir tous mes projets</a>
@@ -118,7 +104,7 @@
 
     </main>
 
-    <footer class="tmp-footer">
+    <footer id="footer-contact" class="tmp-footer">
 
         <section class="contact">
             <h1>Titouan Sans</h1>
@@ -132,11 +118,11 @@
             <h2>Menu</h2>
             <div class="links">
                 <a href="index.html">Accueil</a><br>
-                <a href="profil.html">Présentation</a><br>
-                <a href="competences.html">Compétences</a><br>
+                <!-- <a href="profil.html">Présentation</a><br> -->
+                <!-- <a href="competences.html">Compétences</a><br> -->
                 <a href="portfolio.html">Projets</a><br>
                 <a href="images/competences/CV_TitouanSans_2021.pdf" target="_blank">CV</a><br>
-                <a href="contact.html">Contact</a>
+                <!-- <a href="contact.html">Contact</a> -->
             </div>
         </nav>
 
@@ -144,6 +130,7 @@
     
     <!-- Script de la bascule du menu -->
     <script src="scripts/menu.js"></script>
+
 
 </body>
 </html>
