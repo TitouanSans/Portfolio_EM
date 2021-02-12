@@ -20,19 +20,19 @@ document.getElementsByClassName('tmp-menu')[0].innerHTML = `
 
 // Menu.js : bascule de l'attribut data-state du bouton burger du menu au clic (opened/closed)
 
-var menu = document.querySelector('.tmp-menu');
-var burger = document.querySelector('.tmp-menu .burger');
+// var menu = document.querySelector('.tmp-menu');
+// var burger = document.querySelector('.tmp-menu .burger');
 
-burger.addEventListener('click', function(event){
+// burger.addEventListener('click', function(event){
 
-    if (menu.getAttribute('data-state') === 'closed') {
+//     if (menu.getAttribute('data-state') === 'closed') {
 
-        menu.setAttribute('data-state', 'opened');
+//         menu.setAttribute('data-state', 'opened');
 
-    } else {
+//     } else {
 
-        menu.setAttribute('data-state', 'closed');
+//         menu.setAttribute('data-state', 'closed');
 
-    }
+//     }
 
-});
+// });
